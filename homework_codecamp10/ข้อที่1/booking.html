@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking-HTML</title>
+    <style>
+        fieldset{ 
+            color: aliceblue;
+            border:1px dashed red ;
+            border-radius: 0.5;
+        }
+        form{
+            color: aliceblue;
+        }
+        form * > currentcy {
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <label for="Flying from">Flying from</label>
+        <label for="To">To</label><br>
+        <input type="text" name="Flying from" value=""> 
+        <input type="text" name="To" value=""> <br><br>
+        <label for="Departing">Departing</label>
+        <label for="Returning">Returning</label>
+        <input type="date" name="Departing" value="">
+        <input type="date" name="Retruning" value=""><br><br>
+        <label for="Adult">Adult</label>
+        <label for="Child">Child</label>
+        <label for="infant">Infant</label>
+        <label for="Currency">Currency</label>
+        <input type="number" name="Adult" min="1" max="10">
+        <input type="number" name="Child" min="0" max="10">
+        <input type="number" name="Infant" min="0" max="5">
+        <select name="Currency" id="Currentcy">
+            <option value="SGD">SGD</option>
+            <option value="CNY">CNY</option>
+            <option value="HKD">HKD</option>
+            <option value="USD">USD</option>
+            <option value="JPY">JPY</option>
+        </select>
+        <br><br>
+        <label for="search">SEARCH</label>
+        <input type="search" name="search">
+        </fieldset> 
+    </form>
+</body>
+</html>
